@@ -22,6 +22,18 @@
 .dot.yellow { background:#d69e2e; }
 .dot.orange { background:#dd6b20; }
 .dot.red { background:#c53030; }
+.zones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Mobile safety */
+@media (max-width: 600px) {
+  .zones {
+    grid-template-columns: 1fr;
+  }
+}
 
   </style>
 </head>
@@ -29,6 +41,7 @@
 
 <h1>EIS – Export Intelligence System</h1>
 <p><i>Private trade brain. Read, not explain.</i></p>
+<div class="zones">
 
 <div class="zone blue">
   <h2><span class="dot blue"></span>BLUE ZONE</h2>
@@ -53,6 +66,7 @@
   <h2><span class="dot red"></span>RED ZONE</h2>
 
   <a href="data/04_RED/">DG / High Risk</a>
+</div>
 </div>
 
 <div class="zone">
