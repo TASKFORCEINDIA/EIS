@@ -7,12 +7,21 @@
     body { font-family: Arial, sans-serif; background:#f7f7f7; padding:20px }
     h1 { margin-bottom:10px }
     .zone { padding:15px; margin:10px 0; border-radius:8px }
-    .blue { background:#e6f0ff }
-    .yellow { background:#fff6cc }
-    .orange { background:#ffe6cc }
-    .red { background:#ffe6e6 }
+    
     a { display:block; margin:6px 0; text-decoration:none; font-weight:bold }
     a { display:inline-block; padding:6px 0; }
+.dot {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.dot.blue { background:#2b6cb0; }
+.dot.yellow { background:#d69e2e; }
+.dot.orange { background:#dd6b20; }
+.dot.red { background:#c53030; }
 
   </style>
 </head>
@@ -22,23 +31,27 @@
 <p><i>Private trade brain. Read, not explain.</i></p>
 
 <div class="zone blue">
-  <h2>🔵 BLUE ZONE</h2>
+  <h2><span class="dot blue"></span>BLUE ZONE</h2>
+
   <a href="data/01_BLUE/">Air Zero Friction Tables</a>
   <a href="data/05_BUNDLES/MB01_LAB_CONSUMABLES.md">MB-01 Lab Consumables</a>
 </div>
 
 <div class="zone yellow">
-  <h2>🟡 YELLOW ZONE</h2>
+  <h2><span class="dot yellow"></span>YELLOW ZONE</h2>
+
   <a href="data/02_YELLOW/">Calibration & Water Lab</a>
 </div>
 
 <div class="zone orange">
-  <h2>🍊 ORANGE ZONE</h2>
+  <h2><span class="dot orange"></span>ORANGE ZONE</h2>
+
   <a href="data/03_ORANGE/">Controlled / Margin Tables</a>
 </div>
 
 <div class="zone red">
-  <h2>🔴 RED ZONE</h2>
+  <h2><span class="dot red"></span>RED ZONE</h2>
+
   <a href="data/04_RED/">DG / High Risk</a>
 </div>
 
